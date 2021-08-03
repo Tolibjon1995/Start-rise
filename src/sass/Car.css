@@ -1,0 +1,146 @@
+body {
+
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+
+}
+
+.contakt .swiper-container,
+.swiper-container-coverflow,
+.swiper-container-3d,
+.swiper-container-initialized,
+.swiper-container-horizontal,
+.swiper-container-pointer-events,
+.mySwiper {
+  height: auto !important;
+  padding: 0 !important;
+}
+
+.contakt .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 20%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-button-next {
+  top: 50% !important;
+  color: darkorange;
+}
+
+.swiper-button-prev {
+  top: 50% !important;
+  color: darkorange;
+}
+
+.contakt .swiper-slide-prev {
+  transform: scale(0.8) !important;
+  transition: all 0.3s linear;
+}
+
+.contakt .swiper-slide-next {
+  transform: scale(0.8) !important;
+  transition: all 0.3s linear;
+}
+
+.contakt .swiper-slide-active {
+  transform: scale(1) !important;
+  transition: all 0.3s linear;
+}
+
+.contakt .swiper-slide video {
+  display: block;
+
+  position: relative;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+.remove-btn {
+  display: none !important;
+}
+
+.assPlayer {
+  display: flex !important;
+}
+
+@media (max-width:576px) {
+  .contakt .swiper-slide {
+    width: 100% !important;
+  }
+  .contakt .swiper-slide video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .contakt .swiper-slide {
+    width: 100% !important;
+  }
+}
+
+.contakt .play {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+}
+
+.contakt .playbtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0892ee;
+  ;
+  position: relative;
+}
+
+.contakt .playbtn i {
+  /* color: #0892ee;   */
+  color: #fff;
+  margin-left: 5px !important;
+}
+
+.contakt .playbtn::after {
+  content: "";
+  position: absolute;
+
+  background-color: #0892ee;
+  border-radius: 50%;
+  z-index: 999999999999999;
+  animation-name: playBtn;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes playBtn {
+  0% {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}

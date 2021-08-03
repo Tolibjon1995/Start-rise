@@ -1,0 +1,172 @@
+body{
+    background:#070A22;
+    background-image: url('../images/bg-body.png');
+    background-repeat: repeat;
+    background-size: cover;
+    .navbar-fixsed {
+      &.gap{
+        
+          background-color: #070A22;
+        
+      }
+    }
+    
+    
+           header{
+             margin-top: 150px !important;
+             @media (max-width: 576px) {
+              margin-top: 150px !important;
+          }
+           } 
+            
+           .modal-dialog {
+            // max-width: 100% !important;
+           
+            background-color: transparent;
+            margin: 3rem auto;
+            .modal-content{
+              background-color: transparent;
+              height: 100vh;
+              position: absolute;
+              z-index: 99999999999999999 !important;
+              .modal-header{
+                background: rgba(78, 89, 245, 0.274);
+                color: aliceblue;
+                .close{
+                  span{
+                    font-size: 30px !important;
+                    width: 50px;
+                    height: 50px;
+                  }
+                }
+              }
+              .modal-body{
+                background: rgba(78, 89, 245, 0);
+                padding: 0;
+                img{
+                  object-fit: contain !important;
+                }
+              }
+            }
+        } 
+        
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;  
+  height: 300px;
+}
+.swiper-container, .swiper-container-coverflow, .swiper-container-3d ,.swiper-container-initialized, .swiper-container-horizontal ,.swiper-container-pointer-events ,.mySwiper{
+  height: 500px !important;
+  padding: 0 !important;
+}  
+.swiper-pagination-bullet{
+  display: none !important;
+}
+.container-fluid{
+  margin-top: 100px !important;
+}
+
+.vebsit{
+  position: relative;
+  background-color: transparent !important;
+  img{
+    position: absolute !important;
+    top: -24px;
+    left: -24px;
+    object-fit: cover;
+    width: 150%;
+  }
+}
+ol{
+  margin-left: 17px !important;
+}
+.manzil{
+  color: #FFF;
+  font-weight: 600;
+  font-size: 12px;
+  display: block;
+  margin: 0 !important;
+}
+.bg-img{
+  background-image: url('../images/PngItem_491628.png');
+  background-repeat: no-repeat;
+  background-size: 80% 80%;
+  background-position-x: center;
+  min-height: 100vh;
+  
+  @media (max-width: 576px) {
+    min-height: 100vh;
+    background-size: 50% 50%;
+    background-position-x: center;
+}
+
+.tabrik{
+  margin-top: 22%;
+  margin-bottom: 0 !important;
+}
+
+}
+.hedTel2{
+  color:#0395f6;
+  text-decoration: none;
+  font-weight: 700;
+  &:hover{
+    text-shadow: 0 0 10px  #0308ff; 
+  }
+  @media (max-width:576px) {
+    font-size: 27px;
+  }
+}
+.animates{
+  margin-top: 50px;
+}
+.__tel{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 30px;
+  position: relative;
+  margin-left: 24px;
+  &:hover{
+    .__span{
+      width: 220px;
+      
+    }
+  }
+  
+  .__span{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color:#0395f6;
+    position: absolute;
+    left: -24px;
+    top: -16px;
+    z-index: -1;
+    transition: all 0.3s linear;
+  }
+}
+.__tel_info{
+  margin-top: 110px;
+  @media (max-width:576px) {
+    margin-top: 40px;
+    
+  }
+  h1{
+    @media (max-width:576px) {
+      margin-top: 0;
+      font-size: 35px;
+    }
+  }
+}
+.__img{
+  object-fit: cover;
+  width: 100%;
+}
+}

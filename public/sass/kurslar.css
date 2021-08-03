@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "bold";
+  src: url("../fonts/OCTARINE-BOLD.OTF") format("truetype");
+}
+
+@font-face {
+  font-family: "light";
+  src: url("../fonts/Octarine-Light.otf") format("truetype");
+}
+
+body {
+  background-color: #070A22;
+}
+
+body .col {
+  margin-top: 30px;
+  padding: 10px !important;
+}
+
+body .col .card {
+  padding-top: 10px;
+  height: 100%;
+  text-align: center;
+  background-color: #101227;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+body .las {
+  text-align: center !important;
+  margin-top: 20px !important;
+  color: #FF881C;
+  font-family: "bold";
+}
+
+body .las.hed {
+  margin-top: 100px;
+  font-family: "bold";
+}
+
+body a.btn {
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-top: 50px;
+}
+
+body footer {
+  margin-top: 50px;
+}
+/*# sourceMappingURL=kurslar.css.map */

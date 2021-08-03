@@ -1,0 +1,44 @@
+.__kurslar_foto{
+    .card{
+    position: relative;
+    transition: all 0.5s linear;
+    img {
+        width: 150px !important;
+        height: 150px !important;
+        margin: 0 auto;
+        -o-object-fit: contain;
+           object-fit: contain;
+      }
+    h6 {
+        font-size: 25px;
+        font-weight: 600;
+        margin-top: 20px;
+        color: #bdbdbe;
+        font-family: "light";
+      }
+    &:hover{
+        padding: 0 !important;
+        .sloy{
+            margin-top: 0;
+        }  
+    }
+    .sloy{
+        background-color: #fbfbfb;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin-top: -150%;
+        transition: all 0.5s linear;
+        padding: 0 2px;
+        h4{
+            color: #FF881C;
+            margin-top: 10px;
+            font-weight: 700;
+        }
+        p{
+            color: #0892ee;
+            font-size: 30px;
+            font-weight: 700;
+        }
+    }
+}}
