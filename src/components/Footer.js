@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-
+import { FaTelegramPlane,FaFacebookF,FaInstagram,FaLinkedinIn } from 'react-icons/fa';
+import '../sass/portfolio.scss'
 
 const Footer = (props) => {
     return (
@@ -37,16 +38,28 @@ const Footer = (props) => {
                             <div>
                                 <div className="icons d-flex justify-content-center justify-content-between">
                                     <a href="https://t.me/startriseuz" className='d-flex justify-content-end align-items-center'>
-                                        <img src="./images/Telegram-2 copy.png" alt="" />
+                                        <span>
+                                            <i><FaTelegramPlane/></i>
+                                            <span></span>
+                                        </span>
                                     </a>
                                     <a href="#contakt" className='d-flex justify-content-end align-items-center'>
-                                        <img src="./images/facebook copy.png" alt="" />
+                                    <span>
+                                    <i><FaFacebookF/></i>
+                                    <span></span>
+                                    </span>
                                     </a>
                                     <a href="https://www.instagram.com/p/COICJRaLbT6/?igshid=1uwcu24vgn5rp" className='d-flex justify-content-end align-items-center'>
-                                        <img src="./images/instagram copy 2.png" alt="" />
+                                    <span>
+                                    <i><FaInstagram/></i>
+                                    <span></span>
+                                    </span>
                                     </a>
-                                    <a href="#contakt" className='d-flex justify-content-center align-items-center'>
-                                        <img src="./images/twitter-icon-png-circle-4 copy.png" alt="" />
+                                    <a href="https://www.linkedin.com/company/start-rise-plus/mycompany/" className='d-flex justify-content-center align-items-center'>
+                                    <span>
+                                    <i><FaLinkedinIn/></i>
+                                    <span></span>
+                                    </span>
                                     </a>
                                 </div>
                                 <a href="tel:+998 88 250 11 01" className=" text-center text-lg-left nav-link tel">+998 88 250 11 01</a>

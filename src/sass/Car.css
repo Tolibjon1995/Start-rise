@@ -40,13 +40,28 @@ body {
 .swiper-button-next {
   top: 50% !important;
   color: darkorange;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background:#070a22d3;
 }
 
 .swiper-button-prev {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background:#070a22d3;
+  
   top: 50% !important;
   color: darkorange;
+  
 }
-
+.swiper-button-prev:hover{
+  background:#070A22;
+}
+.swiper-button-next:hover{
+  background:#070A22;
+}
 .contakt .swiper-slide-prev {
   transform: scale(0.8) !important;
   transition: all 0.3s linear;
