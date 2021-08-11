@@ -13,7 +13,7 @@ const Kurslar = (props) => {
         <div className="row w-100">
         </div>
         <div className="row mt-3">
-          <div className="col">
+          <div data-aos="fade-down-right" data-aos-anchor-placement="top-center" className="col-12 col-md-6 col-lg-3 anim_card mt-3">
             <div className="card">
               <img src="./images/kurslar/figma.png" alt='' />
               <h6>Figma</h6>
@@ -23,7 +23,7 @@ const Kurslar = (props) => {
               </div>
             </div>
           </div>
-          <div className="col">
+          <div data-aos="fade-down-right" data-aos-anchor-placement="top-center" className="col-12 col-md-6 col-lg-3 anim_card mt-3">
             <div className="card">
               <img src="./images/kurslar/Icon Photoshop 2019.png" alt='' />
               <h6>Photoshop</h6>
@@ -33,7 +33,7 @@ const Kurslar = (props) => {
               </div>
             </div>
           </div>
-          <div className="col">
+          <div data-aos="fade-down-left" data-aos-anchor-placement="top-center" className="col-12 col-md-6 col-lg-3 anim_card mt-3">
             <div className="card">
               <img src="/images/kurslar/3dmx.jpg" alt='' />
               <h6>3D Max</h6>
@@ -43,7 +43,7 @@ const Kurslar = (props) => {
               </div>
             </div>
           </div>
-          <div className="col">
+          <div data-aos="fade-down-left" data-aos-anchor-placement="top-center" className="col-12 col-md-6 col-lg-3 anim_card mt-3">
             <div className="card">
               <img src="./images/kurslar/Ai_Logo_v2.png" alt='' />
               <h6>Adobe I</h6>
@@ -56,7 +56,7 @@ const Kurslar = (props) => {
         </div>
         <h1 className='las'>{props.hed.veb}</h1>
         <div className="row mt-3">
-          <div className="col">
+          <div data-aos="fade-down-right" data-aos-anchor-placement="top-center" className="col-12 col-md-6 col-lg-4 mt-3 anim_card">
             <div className="card">
               <img src="./images/kurslar/600px-HTML5_Badge 2.png" alt='' />
               <h6>Html</h6>
@@ -66,7 +66,7 @@ const Kurslar = (props) => {
               </div>
             </div>
           </div>
-          <div className="col">
+          <div data-aos="fade-down-right" data-aos-anchor-placement="top-center" className="col-12 col-md-6 col-lg-4 mt-3 anim_card">
             <div className="card">
               <img src="./images/kurslar/css-3-logo-png-picture-364523-css-3-logo-png-css-logo-png-1600_1600 2.png" alt='' />
               <h6>Css</h6>
@@ -76,7 +76,7 @@ const Kurslar = (props) => {
               </div>
             </div>
           </div>
-          <div className="col">
+          <div data-aos="fade-down-right" data-aos-anchor-placement="top-center" className="col-12 col-md-6 col-lg-4 mt-3 anim_card">
             <div className="card">
               <img src="./images/kurslar/sass-1-logo 1.png" alt='' />
               <h6>Sass</h6>
@@ -86,7 +86,7 @@ const Kurslar = (props) => {
               </div>
             </div>
           </div>
-          <div className="col">
+          <div data-aos="fade-down-left" data-aos-anchor-placement="top-center" className="col-12 col-md-6 col-lg-4 mt-3 anim_card">
             <div className="card">
               <img src="./images/kurslar/logo-javascript-png-transparent-logo-javascriptpng-images-pluspng-javascript-png-587_330 1.png" alt='' />
               <h6>Javascipt</h6>
@@ -96,7 +96,7 @@ const Kurslar = (props) => {
               </div>
             </div>
           </div>
-          <div className="col">
+          <div data-aos="fade-down-left" data-aos-anchor-placement="top-center" className="col-12 col-md-6 col-lg-4 mt-3 anim_card">
             <div className="card">
               <img src="./images/kurslar/1280px-React-icon 2.png" alt='' />
               <h6>React</h6>
@@ -106,7 +106,7 @@ const Kurslar = (props) => {
               </div>
             </div>
           </div>
-          <div className="col">
+          <div data-aos="fade-down-left" data-aos-anchor-placement="top-center" className="col-12 col-md-6 col-lg-4 mt-3 anim_card">
             <div className="card">
               <img src="./images/kurslar/1184px-Vue.js_Logo_2 1.png" alt='' />
               <h6>Vue</h6>
@@ -119,7 +119,7 @@ const Kurslar = (props) => {
         </div>
         <h1 className='las'>{props.hed.bac}</h1>
         <div className="row mt-3">
-          <div className="col">
+          <div data-aos="fade-down-right" data-aos-anchor-placement="top-center" className="col-12 col-md-6 col-lg-4 mt-3 anim_card">
             <div className="card">
               <img src="./images/kurslar/PHP-Logo 1.png" alt='' />
               <h6>PHP</h6>
@@ -129,7 +129,7 @@ const Kurslar = (props) => {
               </div>
             </div>
           </div>
-          <div className="col">
+          <div data-aos="fade-down-right" data-aos-anchor-placement="top-center" className="col-12 col-md-6 col-lg-4 mt-3 anim_card">
             <div className="card">
               <img src="./images/kurslar/LaravelLogo 1.png" alt='' />
               <h6>Laravel</h6>
@@ -139,7 +139,7 @@ const Kurslar = (props) => {
               </div>
             </div>
           </div>
-          <div className="col">
+          <div data-aos="fade-down-right" data-aos-anchor-placement="top-center" className="col-12 col-md-6 col-lg-4 mt-3 anim_card">
             <div className="card">
               <img src="./images/kurslar/5848152fcef1014c0b5e4967 1.png" alt='' />
               <h6>Python </h6>
@@ -149,7 +149,7 @@ const Kurslar = (props) => {
               </div>
             </div>
           </div>
-          <div className="col">
+          <div data-aos="fade-down-left" data-aos-anchor-placement="top-center" className="col-12 col-md-6 col-lg-4 mt-3 anim_card">
             <div className="card">
               <img src="./images/kurslar/django-logo 2.png" alt='' />
               <h6>Django</h6>
@@ -159,7 +159,7 @@ const Kurslar = (props) => {
               </div>
             </div>
           </div>
-          <div className="col">
+          <div data-aos="fade-down-left" data-aos-anchor-placement="top-center" className="col-12 col-md-6 col-lg-4 mt-3 anim_card">
             <div className="card">
               <img src="./images/kurslar/nodejs 1.png" alt='' />
               <h6>Node js</h6>
@@ -169,7 +169,7 @@ const Kurslar = (props) => {
               </div>
             </div>
           </div>
-          <div className="col">
+          <div data-aos="fade-down-left" data-aos-anchor-placement="top-center" className="col-12 col-md-6 col-lg-4 mt-3 anim_card">
             <div className="card">
               <img src="./images/kurslar/mongodb 1.png" alt='' />
               <h6>Mongo DB</h6>

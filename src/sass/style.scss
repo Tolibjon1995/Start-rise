@@ -3,6 +3,7 @@ body{
     background-image: url('../images/bg-body.png');
     background-repeat: repeat;
     background-size: cover;
+    overflow-x: hidden;
     .navbar-fixsed {
       &.gap{
         

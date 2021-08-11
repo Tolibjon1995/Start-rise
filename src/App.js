@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import React, { useState} from 'react'
+import React, { useState,useEffect} from 'react'
 import Company from './components/Company';
 import Footer from './components/Footer';
 import Headers from './components/Headers';
@@ -13,11 +13,14 @@ import Contact from './components/Contact.js';
 import './sass/style.scss';
 import {_uz } from "./language/lang";
 import Tabrik from './components/Tabrik';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 function App(props) {
   const [lang, setLang] = useState(_uz);
-
-  
+  useEffect(() => {
+    Aos.init({ duration: 1000})
+}, [])
   return (
     <div className="App">
       <BrowserRouter>
