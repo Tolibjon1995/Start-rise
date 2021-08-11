@@ -30,9 +30,11 @@ import img27 from'../images/portfolioFoto/photo_2021-06-19_11-27-09.jpg'
 import img28 from'../images/portfolioFoto/photo_2021-06-19_11-27-12.jpg'
 import img29 from'../images/portfolioFoto/photo_2021-06-19_11-27-14.jpg'
 import img30 from'../images/portfolioFoto/photo_2021-06-19_11-27-17.jpg'
-import React, { useState, useEffect } from 'react';
+import React, {useRef, useState, useEffect } from 'react';
 import { Modal, ModalBody } from 'reactstrap';
 import '../sass/portfolio.scss'
+import gsap from "gsap";
+import ScrollTrigger from 'gsap/ScrollTrigger';
 const fotos = [
   { id: 1, foto: img1},
   { id: 2, foto: img2},
@@ -72,9 +74,37 @@ const fotos = [
 const Portfolio = () => {
   const [open, setopen] = useState()
   const [mod, setmod] = useState(false)
-  useEffect(() => {
-    window.scrollTo(0, 0);
-   },[])
+  const revelRef = useRef([]);
+    revelRef.current = [];
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        revelRef.current.forEach((el, index) => {
+            console.log(el)
+            gsap.fromTo(el, {
+               autoAlpha:0
+            }, {
+                duration: 1,
+                autoAlpha: 1,
+                ease: 'none',
+                ScrollTrigger: {
+                    id: `skrol-${index + 1}`,
+                    trigger: el,
+                    start: "bottom center",
+                    end: "bottom top",
+                    toggleActions: 'play none none reverse',
+                    markers: true,
+                    scrub: true
+                }
+           }) 
+        })
+    }, [])
+
+    const addToRef = (el) => {
+        if (el && !revelRef.current.includes(el)) {
+            revelRef.current.push(el)
+      }
+      
+    }
   const toggle = (i) => {
     setmod(!mod);
     setopen(i)
@@ -89,7 +119,7 @@ const Portfolio = () => {
       {
         fotos.map((item) => {
           return (
-            <div className="col-12 col-md-6 col-lg-3 mt-3">
+            <div data-aos="flip-up" data-aos-anchor-placement="top-center" className="col-12 col-md-6 col-lg-3 mt-3" ref={addToRef}>
             <div className="card w-100 h-100 bass">
                 <div className="card-body p-0">
                   <img src={item.foto} onClick={() => { toggle(item.foto) }} alt="" />

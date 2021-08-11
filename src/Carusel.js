@@ -17,6 +17,7 @@ import SwiperCore, { EffectCoverflow, Pagination } from 'swiper/core';
 SwiperCore.use([EffectCoverflow, Pagination]);
 
 export default function Carusel(props) {
+ 
   return (
     <>
       <Swiper
@@ -38,7 +39,7 @@ export default function Carusel(props) {
         className='mySwiper'
       >
         <SwiperSlide>
-          <div className='card'>
+          <div data-aos="zoom-in-down" className='card'>
             <div className='card-body'>
               <div className='cirkl vebsit'>
               <img src="/images/flag/Artboard 2.svg" alt="" />
@@ -54,7 +55,7 @@ export default function Carusel(props) {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className='card'>
+          <div data-aos="zoom-in-down" className='card'>
             <div className='card-body'>
               <div className='cirkl vebsit'>
               <img src="/images/flag/Artboard 2 copy 2.svg" alt="" />
@@ -70,7 +71,7 @@ export default function Carusel(props) {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className='card'>
+          <div data-aos="zoom-in-down" className='card'>
             <div className='card-body'>
               <div className='cirkl vebsit'>
               <img src="/images/flag/Artboard 2 copy.svg" alt="" />

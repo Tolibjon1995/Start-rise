@@ -6,7 +6,13 @@ import kompyuter from '../images/kom.png'
 import VideoCarus from './VideoCarus';
 import Telefon from './Telefon';
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 501880798627a751a821c7684ac9aa24e759c73c
 const Headers = (props) => {
+   
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [])
@@ -42,10 +48,10 @@ const Headers = (props) => {
 
             </header>
             <main>
-                <section className="kurslar">
+                <section id='skrol'  className="kurslar">
                     <div className="container tuzatish">
                         <div className="row kurs-foto">
-                            <div className="col-12 col-lg-6 text-center text-lg-left kurs-info">
+                            <div data-aos="zoom-out-down" className="col-12 col-lg-6 text-center text-lg-left kurs-info">
                                 <h1>{props.hed.kurstitle}</h1>
                                 <h5>{props.hed.kursinfo}</h5>
                                 <p>{props.hed.kursp}</p>
@@ -54,7 +60,7 @@ const Headers = (props) => {
                                     <Link to="/register" className="btn btn2 third">{props.hed.kusrga}</Link>
                                 </div>
                             </div>
-                            <div className="col-12 col-lg-6">
+                            <div data-aos="zoom-out-down" className="col-12 col-lg-6">
                                 <div className="wrapper">
                                     <div className="main-div">
                                         <img src={kompyuter} alt="" />
@@ -65,12 +71,12 @@ const Headers = (props) => {
                         </div>
                     </div>
                 </section>
-                <section className="portfolio" >
+                <section id='skrol'  className="portfolio" >
                     <div className="container">
                         <div className="row">
 
-                            <div className="portfolio-foto w-100">
-                                <div className="col-12 col-lg-6 text-center text-lg-left offset-lg-6 portfolio-info">
+                            <div data-aos="zoom-out-down" className="portfolio-foto w-100">
+                                <div data-aos="zoom-out-down" className="col-12 col-lg-6 text-center text-lg-left offset-lg-6 portfolio-info">
                                     <h1 className='port-fol'>{props.hed.nav3}</h1>
                                     <h5>{props.hed.port}</h5>
                                     <p>{props.hed.portp}</p>
@@ -80,7 +86,7 @@ const Headers = (props) => {
                         </div>
                     </div>
                 </section>
-                <section className="xizmatlar" >
+                <section id='skrol'  className="xizmatlar" >
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-12 text-center">
@@ -92,7 +98,7 @@ const Headers = (props) => {
                         </div>
                     </div>
                 </section>
-                <section className="jamoa">
+                <section id='skrol'  className="jamoa">
                     <div className="container">
                         <div className="row w-100 d-flex justify-content-center">
                             <div className="col-12 col-md-5 nimadir2 text-center">
@@ -103,10 +109,10 @@ const Headers = (props) => {
                         <Hodimlar hed={props.hed} />
                     </div>
                 </section>
-                <section className="contakt container">
+                <section id='skrol'  className="contakt container">
                     <VideoCarus />
                 </section>
-                <section className="container">
+                <section id='skrol'  className="container">
                     <Telefon hed={props.hed}/>
                 </section>
             </main>
