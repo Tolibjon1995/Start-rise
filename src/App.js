@@ -13,6 +13,7 @@ import Contact from './components/Contact.js';
 import './sass/style.scss';
 import {_uz } from "./language/lang";
 import Tabrik from './components/Tabrik';
+import Bird from './components/Bird'
 
 function App(props) {
   const [lang, setLang] = useState(_uz);
@@ -20,6 +21,7 @@ function App(props) {
   
   return (
     <div className="App">
+      <Bird/>
       <BrowserRouter>
         <Navbars navs={lang} funk={setLang} />
         <Switch>

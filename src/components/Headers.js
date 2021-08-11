@@ -6,7 +6,6 @@ import kompyuter from '../images/kom.png'
 import VideoCarus from './VideoCarus';
 import Telefon from './Telefon';
 
-
 const Headers = (props) => {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -18,6 +17,7 @@ const Headers = (props) => {
 
     return (
         <div>
+            
             <header>
                 <div className="container">
                     <div className="row mt-5">
