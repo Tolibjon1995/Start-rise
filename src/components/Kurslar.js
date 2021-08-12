@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from "react-router-dom"
 import '../sass/kurs_sloy.scss'
 
+
 const Kurslar = (props) => {
   useEffect(() => {
     window.scrollTo(0, 0);

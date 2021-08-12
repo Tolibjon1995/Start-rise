@@ -6,11 +6,7 @@ import kompyuter from '../images/kom.png'
 import VideoCarus from './VideoCarus';
 import Telefon from './Telefon';
 
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 501880798627a751a821c7684ac9aa24e759c73c
 const Headers = (props) => {
    
     useEffect(() => {

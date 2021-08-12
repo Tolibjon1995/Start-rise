@@ -13,12 +13,9 @@ import Contact from './components/Contact.js';
 import './sass/style.scss';
 import {_uz } from "./language/lang";
 import Tabrik from './components/Tabrik';
-<<<<<<< HEAD
-import Bird from './components/Bird'
-=======
+
 import Aos from 'aos'
 import 'aos/dist/aos.css'
->>>>>>> 501880798627a751a821c7684ac9aa24e759c73c
 
 function App(props) {
   const [lang, setLang] = useState(_uz);
@@ -27,7 +24,7 @@ function App(props) {
 }, [])
   return (
     <div className="App">
-      <Bird/>
+      
       <BrowserRouter>
         <Navbars navs={lang} funk={setLang} />
         <Switch>
