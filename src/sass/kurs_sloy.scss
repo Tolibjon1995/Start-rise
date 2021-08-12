@@ -14,13 +14,14 @@ h1 {
     >.front,
     >.back {
         display: block;
-        transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
+        transition-timing-function: cubic-bezier(.350, .885, .32, 1.275);
         transition-duration: .5s;
         transition-property: transform, opacity;
     }
     >.front {
         transform: rotateY(0deg);
         text-align: center;
+        background-color: #101227;
         img{
             width: 150px !important;
             height: 150px !important;
@@ -43,7 +44,8 @@ h1 {
         height: 100%;
         transform: rotateY(-180deg);
         text-align: center;
-        
+        background-color: #070a225d;
+        backdrop-filter: blur(8px);
     h4 {
         color:#FF881C;
         font-weight: 700;
@@ -89,13 +91,10 @@ h1 {
     >.back {
         // padding-top: 10px;
       display: block;
-      color: white;
       width: 100%;
-      background-size: cover!important;
-      background-position: center!important;
       height: 220px;
       padding: 1em 2em;
-      background: #313131;
+    //   background: #313131;
       border-radius: 10px;
         
     }
