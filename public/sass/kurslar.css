@@ -12,19 +12,6 @@ body {
   background-color: #070A22;
 }
 
-body .col {
-  margin-top: 30px;
-  padding: 10px !important;
-}
-
-body .col .card {
-  padding-top: 10px;
-  height: 100%;
-  text-align: center;
-  background-color: #101227;
-  overflow: hidden;
-  cursor: pointer;
-}
 
 body .las {
   text-align: center !important;
